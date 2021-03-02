@@ -1,0 +1,18 @@
+{
+  "name": "scripts-manager",
+  "productName": "脚本管理器",
+  "version": "2.0.0",
+  "description": "脚本管理器",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "猫头猫",
+    "email": "me@maotoumao.xyz",
+    "url": "https://github.com/maotoumao/python-script-manager"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r ../.erb/scripts/BabelRegister.js ../.erb/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
